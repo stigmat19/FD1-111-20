@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        header{
+            height: 60px;
+            background-color: aqua;
+            padding-top: 11px;
+            text-align: center;
+        }
+        .content-wrap{
+            background-color: burlywood;
+        }
+        ul{
+            float: left;
+            width: 200px;
+        }
+        .content{
+            background-color: #fff;
+            margin-left: 200px;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        input:required{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>hello</h1>
+    </header>
+    <div class="content-wrap clearfix">
+        <ul>
+            <li>
+                <a href="#">1</a>
+            </li>
+            <li>
+                <a href="#">2</a>
+            </li>
+            <li>
+                <a href="#">3</a>
+            </li>
+            <li>
+                <a href="#">4</a>
+            </li>
+            <li>
+                <a href="#">5</a>
+            </li>
+        </ul>
+        <div class="content">
+            <h2>hello</h2>
+            <p>edit!</p>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <mark>test</mark>
+
+    <form action="http://fe.it-academy.by/TestForm.php">
+        ruseller
+        <datalist id="animalslist">
+            <option value="собака">
+            <option value="кошка">
+            <option value="попугай">
+          </datalist>
+        <input type="text" tabindex="3" list="animalslist" autofocus > <br>
+        <input type="text" tabindex="2" required value="sdsds">   <br>
+        <input type="tel" required pattern="^(\+375|80)(29|25|44|33)(\d{3})(\d{2})(\d{2})$">  <br>
+        <input type="submit">  <br>
+    </form>
+    
+</body>
+</html>

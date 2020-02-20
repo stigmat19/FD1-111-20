@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        ul {
+            background-color: blue;
+        }
+
+        li {
+            background-color: red;
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        p, ul {
+            color: red;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both
+        }
+        .test{
+            background-color: green;
+            opacity:0.8;
+        }
+        .test > span{
+            opacity:0.5;
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <ul class="clearfix">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+<!--<div class="footer">-->
+    <!--<ul class="clearfix">-->
+        <!--<li>1</li>-->
+        <!--<li>2</li>-->
+        <!--<li>3</li>-->
+    <!--</ul>-->
+<!--</div>-->
+
+<p>Lorem</p>
+<span>text</span>
+<span>text</span>
+<span>text</span>
+
+<div class="test"> <span>text</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci, dolore obcaecati officia placeat ratione repudiandae ut? Alias aliquid aperiam, deleniti, esse expedita facilis, hic labore placeat recusandae tempore voluptatum.</div>
+
+
+
+</body>
+</html>

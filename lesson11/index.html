@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Document</title>
+    <style>
+        /* span{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+        }
+        span:first-child{
+            background-color: red;    
+        }
+        
+        span:nth-child(2){
+            background-color: blue;    
+        }
+        span:nth-child(3){
+            background-color: green;    
+        }
+        .a{
+            width: 500px;
+            height: 300px;   
+            background-color: red; 
+            margin: 100px;
+        }
+        
+        .b{
+            width:250px;
+            height: 150px;
+            background-color: green; 
+        }
+        
+        .c{
+            width:100px;
+            height: 50px;
+            background-color: blue; 
+        } */
+        .main{
+            width: 500px;
+            height: 300px;
+            background-color: red; 
+            position: relative;
+        }
+        .main > div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        .main > div:nth-child(1){
+            background-color: yellow;
+            left: 40%;
+            top: 36%;
+        }
+        
+        .main > div:nth-child(2){
+            background-color: greenyellow;
+            left: 44%;
+            top: 6%;
+        }
+        
+        .main > div:nth-child(3){
+            background-color: blue ;
+            left: 30%;
+            top: 20%
+        }
+
+        ul li{
+            list-style-type: none;
+        }
+        .item{
+            width: 200px;
+            height: 300px;
+            position: relative;
+        }
+        .image{
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            background-color: red;
+        }
+        .plus{
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            background-color: #1c7fd6;
+            opacity: 0;
+        }
+        .plus:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="item">
+            <div class="image"></div>
+            <div class="plus">
+                <div>
+                    <h4 draggable="true">Project Title <i class="fab fa-android"></i></h4>
+                    <p>App Design</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SqLeJ5Soxn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

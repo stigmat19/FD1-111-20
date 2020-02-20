@@ -1,0 +1,22 @@
+
+.header{
+    background-color: teal;
+}
+.item{
+    height: 30px;
+}
+.item:first-child{
+    background-color: red;
+}
+.item:nth-child(2){
+    background-color: green;
+}
+.item:last-child{
+    background-color: blue;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+

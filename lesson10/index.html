@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Клиент
+    <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="a">
+        <input type="text" name="first" value="test" placeholder="hello" >
+        <input type="text" name="second" required>
+        <input type="text" name="third">
+        <input type="text" name="four">
+        <input type="hidden" name="type" value="client">
+        <input type="submit" value="Отправить">
+    </form>
+    Банк
+    <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="s">
+        <input type="text" name="first" value="test" placeholder="hello"> <br>
+        <input type="text" name="second" autofocus> <br>
+        <input type="text" name="third"> <br>
+        <input type="text" name="four"> <br>
+        <input type="hidden" name="type" value="bank"> <br>
+
+
+        <input type="radio" name="radio1" value="yes"> 
+        <input type="radio" name="radio1" value="no"> <br>
+
+
+        <input type="radio" name="radio2" value="1">
+        <input type="radio" name="radio2" value="2">
+        <input type="radio" name="radio2" value="3"> <br>
+
+        <textarea name="text" cols="30" rows="10">
+            text
+        </textarea>
+
+        <input type="checkbox" name="check" value="Yes" >
+
+        <select name="city[]" size="3" multiple>
+            <option value="minsk">minsk</option>
+            <option value="Zhodino">Zhodino</option>
+            <option value="Borisov">Borisov</option>
+            <option value="minsk">minsk</option>
+            <option value="Zhodino">Zhodino</option>
+            <option value="Borisov">Borisov</option>
+            <option value="minsk">minsk</option>
+            <option value="Zhodino">Zhodino</option>
+            <option value="Borisov">Borisov</option>
+            <option value="minsk">minsk</option>
+            <option value="Zhodino">Zhodino</option>
+            <option value="Borisov">Borisov</option>
+        </select>
+
+        <input type="submit" value="" required>
+        <input type="reset" value="reset">
+    </form>
+    
+    <input type="button" value="send" onclick="a()">
+
+    <button>
+        <h1>hello</h1>
+    </button>
+
+    <script>
+        function a(){
+            alert("hello");
+        }
+    </script>
+</body>
+</html>          

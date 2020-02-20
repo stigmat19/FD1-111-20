@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .item, .image1, .image2{
+            width: 200px;
+            height: 300px;
+        }
+        .item{
+            background-color: red;
+            position: relative;
+        }
+        .image1{
+            background-color: blue;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+        .image2{
+            background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            opacity: 0.5;
+        }
+        .image2:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="item">
+        <div class="image1"></div>
+        <div class="image2"></div>
+    </div>
+    
+</body>
+</html>
